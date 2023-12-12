@@ -3,9 +3,9 @@ import java.util.InputMismatchException;
 
 public class Employee {
     private String name, employmentType, gender;
-    private int age, pps[];
+    private double age, pps;
 
-    public Employee(String name, String employmentType, String gender, int age, int pps[]) {
+    public Employee(String name, String employmentType, String gender, double age, double pps) {
 
     }
 
@@ -38,7 +38,7 @@ public class Employee {
         this.gender = gender;
     }
 
-    public int getAge() {
+    public double getAge() {
         if (age > 16 && age < 66) {
             return age;
         }
@@ -47,16 +47,16 @@ public class Employee {
         }
     }
 
-    public void setAge(int age) {
+    public void setAge(double age) {
         this.age = age;
     }
 
-    public int[] getPps() {
+    public double getPps() {
         // Insert code to check number of values in pps
         return pps;
     }
 
-    public void setPps(int[] pps) {
+    public void setPps(double pps) {
         this.pps = pps;
     }
 }
